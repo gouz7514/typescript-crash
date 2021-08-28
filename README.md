@@ -79,3 +79,17 @@ enum Direction2 {
 console.log(Direction1.Up) // 1
 console.log(Direction2.Left) // Left
 ```
+
+### Objects
+`type` 을 사용하면 코드가 좀 더 깔끔해짐. `interface`와 비슷
+```typescript
+type User = {
+  id: number,
+  name: string
+}
+
+const user: User = {
+  id: 1,
+  name: 'Kim'
+}
+```
