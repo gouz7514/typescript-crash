@@ -19,3 +19,34 @@ let id = 5;
 ```
 
 tsconfig.json 파일에서 `rootDir`, `outDir` 설정해서 개발용, 배포용을 분리해서 관리할 수 있다.
+
+## 0828
+### Basic Types
+```typescript
+// number
+let id: number = 5
+// string
+let name: string = 'Kim hak jae'
+// boolean
+let isHandsome: boolean = true
+//any
+let x: any = 'Hello'
+```
+
+### array
+```typescript
+let arr: number[] = [1,2,3,4,5]
+let arr2: any[] = [1,2,'hello',true]
+```
+
+### Tuple
+```typescript
+let person: [number, string, boolean] = [1, 'Kim', true]
+// Tuple Array
+let employee: [number, string][]
+
+employee = [
+  [1, 'Kim'],
+  [2, 'Park']
+]
+```
