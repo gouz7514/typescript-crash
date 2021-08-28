@@ -128,3 +128,14 @@ interface UserInterface {
 type Point = number | string // 이건 됨
 interface Point = number | string // 이건 안됨
 ```
+
+## Function Interface
+인터페이스를 선언해서 함수에 사용이 가능하다
+```typescript
+// 아래와 같이 정해진 타입의 파라미터, 반환 값을 갖도록 할 수 있음
+interface MathFunc {
+  (x: number, y: number): number
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y
+```
