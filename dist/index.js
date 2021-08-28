@@ -56,4 +56,5 @@ const user1 = {
     id: 2,
     name: 'Choi'
 };
+const add = (x, y) => x + y;
 // export {}

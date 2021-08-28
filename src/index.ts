@@ -81,4 +81,10 @@ const user1: UserInterface = {
   name: 'Choi'
 }
 
+interface MathFunc {
+  (x: number, y: number): number
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y
+
 // export {}
