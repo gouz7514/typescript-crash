@@ -114,3 +114,17 @@ function log(message: string | numer): void {
   console.log(message)
 }
 ```
+
+## Interface
+```typescript
+interface UserInterface {
+  readonly id: number,
+  name: string,
+  age?: number // 없어도 되는 값
+}
+```
+`type`과 다른 점은 `type`은 primitive로 선언 가능
+```typescript
+type Point = number | string // 이건 됨
+interface Point = number | string // 이건 안됨
+```
