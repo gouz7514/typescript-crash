@@ -93,3 +93,12 @@ const user: User = {
   name: 'Kim'
 }
 ```
+
+## Type Assertions
+```typescript
+let cid: any = 1
+
+// 아래의 두가지 방식 모두 가능
+let customerId = <number>cid
+let customerId = cid as number
+```
