@@ -43,4 +43,13 @@ const user = {
 let cid = 1;
 // let customerId = <number>cid
 let customerId = cid;
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+function log(message) {
+    console.log(message);
+}
+console.log(addNum(2, 3));
+log('hello');
 // export {}
