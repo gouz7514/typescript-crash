@@ -69,4 +69,16 @@ function log(message: string | number): void {
 console.log(addNum(2,3))
 log('hello')
 
+// Interfaces
+interface UserInterface {
+  readonly id: number,
+  name: string,
+  age?: number
+}
+
+const user1: UserInterface = {
+  id: 2,
+  name: 'Choi'
+}
+
 // export {}

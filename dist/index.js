@@ -52,4 +52,8 @@ function log(message) {
 }
 console.log(addNum(2, 3));
 log('hello');
+const user1 = {
+    id: 2,
+    name: 'Choi'
+};
 // export {}
