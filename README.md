@@ -102,3 +102,15 @@ let cid: any = 1
 let customerId = <number>cid
 let customerId = cid as number
 ```
+
+## Functions
+매개변수와 함수의 반환 값에 타입 선언. 반환 값이 없는 경우 `void`
+```typescript
+function addNum(x: number, y: number): number {
+  return x + y
+}
+
+function log(message: string | numer): void {
+  console.log(message)
+}
+```
