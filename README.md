@@ -50,3 +50,32 @@ employee = [
   [2, 'Park']
 ]
 ```
+
+### Union
+```typescript
+// Union
+let pid: string | number = 22
+
+pid = '22'
+```
+
+### Enum
+기본은 0부터 시작. 시작 값을 정해주거나 각자 값 할당 가능
+```typescript
+enum Direction1 {
+  Up = 1,
+  Down,
+  Left,
+  Right
+}
+
+enum Direction2 {
+  Up = 'Up',
+  Down = 'Down',
+  Left = 'Left',
+  Right = 'Right'
+}
+
+console.log(Direction1.Up) // 1
+console.log(Direction2.Left) // Left
+```
