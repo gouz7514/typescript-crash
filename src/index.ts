@@ -114,4 +114,17 @@ const park = new Person(2, 'Park')
 console.log(kim.register())
 console.log(kim, park)
 
+// Extend Class
+class Employee extends Person {
+  position: string
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name)
+    this.position = position
+  }
+}
+
+const choi = new Employee(3, 'Choi', 'boss')
+console.log(choi.name)
+
 // export {}
