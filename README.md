@@ -156,3 +156,16 @@ const kim = new Person(1, 'Kim')
 ```
 interface는 js로 컴파일되지 않는다. 그래서 클래스를 사용<br />
 interface는 ts 측면에서 더 안전
+
+### 상속
+위에서 생성한 `Person` 클래스 상속하는 `Employee` 클래스 생성하기
+```typescript
+class Employee extends Person {
+  position: string
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name) // 중요
+    this.position = position
+  }
+}
+```
