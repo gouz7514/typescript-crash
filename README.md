@@ -139,3 +139,20 @@ interface MathFunc {
 
 const add: MathFunc = (x: number, y: number): number => x + y
 ```
+
+## Class
+```typescript
+class Person {
+  id: number
+  name: string
+
+  constructor(id: number, name: string) {
+    this.id = id
+    this.name= name
+  }
+}
+
+const kim = new Person(1, 'Kim')
+```
+interface는 js로 컴파일되지 않는다. 그래서 클래스를 사용<br />
+interface는 ts 측면에서 더 안전
