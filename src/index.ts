@@ -127,4 +127,12 @@ class Employee extends Person {
 const choi = new Employee(3, 'Choi', 'boss')
 console.log(choi.name)
 
+// Generic
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items)
+}
+
+let numArr = getArray<number>([1,2,3,4])
+let strArr = getArray<string>(['kim', 'park', 'choi'])
+
 // export {}
