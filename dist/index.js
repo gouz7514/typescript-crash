@@ -57,4 +57,14 @@ const user1 = {
     name: 'Choi'
 };
 const add = (x, y) => x + y;
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const kim = new Person(1, 'Kim');
+const park = new Person(2, 'Park');
+console.log(kim, park);
 // export {}

@@ -87,4 +87,20 @@ interface MathFunc {
 
 const add: MathFunc = (x: number, y: number): number => x + y
 
+// Classes
+class Person {
+  id: number
+  name: string
+
+  constructor(id: number, name: string) {
+    this.id = id
+    this.name= name
+  }
+}
+
+const kim = new Person(1, 'Kim')
+const park = new Person(2, 'Park')
+
+console.log(kim, park)
+
 // export {}
