@@ -140,6 +140,8 @@ interface MathFunc {
 const add: MathFunc = (x: number, y: number): number => x + y
 ```
 
+## 0830
+
 ## Class
 ```typescript
 class Person {
@@ -168,4 +170,27 @@ class Employee extends Person {
     this.position = position
   }
 }
+```
+
+## Generic
+아래와 같이 코드를 작성하면 에러 X
+```typescript
+function getArray(items: any[]): any[] {
+  return new Array().concat(items)
+}
+
+let numArr = getArray([1,2,3,4])
+let strArr = getArray(['kim', 'park', 'choi'])
+
+numArr.push('hello') // any 이므로 에러 X
+```
+
+이런 상황 방지하기 위해 Generic 사용 가능
+```typescript
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items)
+}
+
+let numArr = getArray<number>([1,2,3,4])
+let strArr = getArray<string>(['kim', 'park', 'choi'])
 ```
