@@ -63,8 +63,12 @@ class Person {
         this.id = id;
         this.name = name;
     }
+    register() {
+        return `${this.name} is now registered`;
+    }
 }
 const kim = new Person(1, 'Kim');
 const park = new Person(2, 'Park');
+console.log(kim.register());
 console.log(kim, park);
 // export {}
